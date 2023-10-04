@@ -1,0 +1,38 @@
+1. Liste as primeiras cinco cidade do banco, em ordem alfabética (crescente, A..Z).
+
+SELECT nome  FROM cidades ORDER BY nome ASC LIMIT 5; 
+
+
+2. Liste as cinco últimas cidades do banco, em ordem alfabética decrescente (Z..A). 
+
+SELECT nome FROM cidades ORDER BY nome DESC LIMIT 5; 
+
+
+3.Encontre a cidade que tem a temperatura média mais baixa no inverno.
+
+SELECT nome, temperatura_media_inverno FROM cidades ORDER BY temperatura_media_inverno ASC LIMIT 1; 
+
+
+4.Encontre a cidade que tem a temperatura média mais alta no verão.
+
+SELECT nome, temperatura_media_verao FROM cidades ORDER BY temperatura_media_verao DESC LIMIT 1; 
+
+
+5. Encontre todas as cidades que o nome tem nome começando com S
+
+SELECT nome, temperatura_media_verao, distancia_da_capital FROM cidades WHERE nome LIKE 'S%' ORDER BY nome ASC; 
+
+
+6. Encontre a cidade mais próxima da capital.
+
+SELECT nome, distancia_da_capital FROM cidades WHERE distancia_da_capital > 0.0 LIMIT 1; 
+
+
+7. Encontre a cidade mais distante da capital.
+
+ SELECT nome, distancia_da_capital FROM cidades ORDER BY distancia_da_capital DESC LIMIT 1;
+
+
+8. Poste no fórum uma lista dos comandos que você aprendeu enquanto resolvia esses exercícios. 
+
+link :https://unisales.brightspace.com/d2l/le/34402/discussions/threads/31211/View
